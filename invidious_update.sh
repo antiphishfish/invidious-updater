@@ -152,7 +152,7 @@ shopt -s nocasematch
     DISTRO=$(cat /etc/os-release | grep "PRETTY_NAME" | sed 's/PRETTY_NAME=//g' | sed 's/["]//g' | awk '{print $1}')
   fi
 case "$DISTRO" in
-  Debian*|Ubuntu*|LinuxMint*|PureOS*|Pop*|Devuan*)
+  Debian*|Ubuntu*|LinuxMint*|PureOS*|Pop*|Devuan*|Kali*)
     # shellcheck disable=SC2140
     PKGCMD="apt-get -o Dpkg::Progress-Fancy="1" install -qq"
     LSB=lsb-release
