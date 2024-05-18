@@ -2068,6 +2068,8 @@ while [[ $OPTION != "1" &&
   read -p "Select an option [1-10]: " OPTION
 done
 
+install_invidious
+
 : '
 case $OPTION in
   1) # Install Invidious
