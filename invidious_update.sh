@@ -2068,6 +2068,7 @@ while [[ $OPTION != "1" &&
   read -p "Select an option [1-10]: " OPTION
 done
 
+: '
 case $OPTION in
   1) # Install Invidious
       install_invidious
@@ -2102,3 +2103,4 @@ case $OPTION in
       exit
     ;;
 esac
+'
